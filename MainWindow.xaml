@@ -23,11 +23,11 @@
                 </Grid.ColumnDefinitions>
                 <Button x:Name="RockBtn" Content="Камень" 
                     HorizontalAlignment="Left" FontSize="20"
-                    Padding="20 0 20 0" Grid.Column="0" Margin="20 5" Click="RockBtn_Click"></Button>
+                    Padding="20 0 20 0" Grid.Column="0" Margin="20 5" Click="RockBtn_Click" ></Button>
             <Button x:Name="ScissorsBtn" Content="Ножницы" Padding="20 0 20 0" Margin="0 5 0 5"
-                     HorizontalAlignment="Center" FontSize="20"  Grid.Column="1" Click="ScissorsBtn_Click"></Button>
+                     HorizontalAlignment="Center" FontSize="20"  Grid.Column="1" Click="ScissorsBtn_Click" ></Button>
                 <Button x:Name="PaperBtn" Content="Бумага" Margin="0 5 20 5"
-                        HorizontalAlignment="Right" FontSize="20" Padding="20 0 20 0" Grid.Column="2" Click="PaperBtn_Click"></Button>
+                        HorizontalAlignment="Right" FontSize="20" Padding="20 0 20 0" Grid.Column="2" Click="PaperBtn_Click" ></Button>
             </Grid>
 
         <Grid Grid.Row="2">
@@ -38,21 +38,21 @@
                 <ColumnDefinition Width="10*"></ColumnDefinition>
                 <ColumnDefinition Width="30*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Label x:Name="UserName" Content="Нет Игрока:" Grid.Column="0" 
+            <Label x:Name="UserName" Content="Игрок" Grid.Column="0" 
                    HorizontalAlignment="Right" VerticalContentAlignment="Center" FontSize="20"></Label>
-            <Label x:Name="UIName" Content="UI" Grid.Column="4" 
+            <Label x:Name="UIName" Content="Противник" Grid.Column="4" 
        HorizontalAlignment="Left" VerticalContentAlignment="Center" FontSize="20"></Label>
             
             <Label x:Name="UserScope" Content="0" Grid.Column="1" 
        HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
             
-            <Label x:Name="UIScope" Content="0" Grid.Column="3" 
+            <Label x:Name="PcScope" Content="0" Grid.Column="3" 
        HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
             <Label  Content=":" Grid.Column="2" 
        HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
         </Grid>
         <Image Grid.Row="1" x:Name="ChoiseImgPlayer"></Image>
         <Image Grid.Row="3" x:Name="ChoiseImgUI" ></Image>
-        <TextBlock Grid.Row="4" Margin="10" x:Name="Statistica"></TextBlock>
+        <ListBox Grid.Row="4" Margin="10" x:Name="Statistica"></ListBox>
     </Grid>
 </Window>

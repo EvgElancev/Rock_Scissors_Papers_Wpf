@@ -8,7 +8,6 @@ namespace Rock_Scissors_Papers_Wpf.Data
 {
     internal class Game
     {
-        public string? playerChoice { get; set; }
         public string? ComputerCoice { get; set; }
 
         private string[] choicesPcArr = [ "Rock", "Paper", "Scissors" ];

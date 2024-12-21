@@ -8,7 +8,7 @@ namespace Rock_Scissors_Papers_Wpf.Data
 {
     public class Player
     {
-        public string? Name { get; set; }   
+        
         public string? choice { get; set; }
 
         public Uri? choiceUri { get; set; }  
