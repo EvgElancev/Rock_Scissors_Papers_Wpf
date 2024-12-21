@@ -16,6 +16,11 @@ namespace Rock_Scissors_Papers_Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private bool session = false;
+
+        
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -24,7 +29,6 @@ namespace Rock_Scissors_Papers_Wpf
 
         private void RockBtn_Click(object sender, RoutedEventArgs e)
         {
-
 
             Uri resourseUri = new Uri("/Assets/Rock.png", UriKind.Relative);           
             ChoiseImgPlayer.Source = new BitmapImage(resourseUri);
