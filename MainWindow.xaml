@@ -51,8 +51,8 @@
             <Label  Content=":" Grid.Column="2" 
        HorizontalAlignment="Center" VerticalContentAlignment="Center" FontSize="20"></Label>
         </Grid>
-        <Image Grid.Row="1" x:Name="ChoiseImgPlayer" Source="Assets\default.jpg"></Image>
-        <Image Grid.Row="3" x:Name="ChoiseImgUI" Source="Assets\default.jpg"></Image>
+        <Image Grid.Row="1" x:Name="ChoiseImgPlayer"></Image>
+        <Image Grid.Row="3" x:Name="ChoiseImgUI" ></Image>
         <TextBlock Grid.Row="4" Margin="10" x:Name="Statistica"></TextBlock>
     </Grid>
 </Window>
